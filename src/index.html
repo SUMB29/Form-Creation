@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Application Form</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Tailwind -->
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+
+<body class="py-8 rounded-3xl text-white bg-emerald-500">
+
+    <div class="container max-w-6xl bg-black  mx-auto p-0 shadow-lg rounded">
+
+        <!-- Title -->
+        <div class="text-center py-4 bg-black">
+            <h1 class="text-2xl md:text-4xl text-white font-bold brightness-90">
+                EMPLOYMENT APPLICATION FORM
+            </h1>
+        </div>
+
+        <!-- Blue Header -->
+        <div class="bg-white text-black text-center font-bold font-stretch-75% py-3 px-2 border-y border-black">
+            <small>*PLEASE COMPLETE ALL INFORMATION REQUESTED
+                IN PRINT (PAGES 1-5), EXCEPT SIGNATURE
+                <br> *APPLICANTS MAY BE TESTED FOR ILLEGAL DRUGS</small>
+        </div>
+
+
+
+        <!-- Date -->
+        <div class="row g-0">
+            <div class="col-5 p-2">
+                <label class="fw-bold mb-1">Date:</label>
+                <input type="date" class="form-control border-0 shadow-none">
+            </div>
+        </div>
+
+        <!-- Name -->
+        <div class="row g-0">
+            <label class="fw-bold ml-2">Name:</label>
+            <div class="col-12 col-md-3 p-2">
+                <input type="text" id="empName" placeholder="Last" class="form-control border-0 shadow-none">
+            </div>
+
+            <div class="col-12 col-md-3 p-2">
+                <input type="text" placeholder="First" class="form-control border-0 shadow-none">
+            </div>
+
+            <div class="col-12 col-md-3 p-2">
+                <input type="text" placeholder="Middle" class="form-control border-0 shadow-none">
+            </div>
+
+            <div class="col-12 col-md-3 p-2">
+                <input type="text" placeholder="Maiden" class="form-control border-0 shadow-none">
+            </div>
+        </div>
+
+        <!-- Present Address -->
+        <div class="row g-0">
+            <label class="fw-bold ml-2">Present Address:</label>
+
+            <div class="col-6 col-md-2 p-2">
+                <input type="text" placeholder="Number" class="form-control border-0 shadow-none">
+            </div>
+
+            <div class="col-6 col-md-3 p-2">
+                <input type="text" placeholder="Street" class="form-control border-0 shadow-none">
+            </div>
+
+            <div class="col-6 col-md-3 p-2">
+                <input type="text" placeholder="City" class="form-control border-0 shadow-none">
+            </div>
+
+            <div class="col-3 col-md-2 p-2">
+                <input type="text" placeholder="State" class="form-control border-0 shadow-none">
+            </div>
+
+            <div class="col-3 col-md-2 p-2">
+                <input type="text" placeholder="Zip" class="form-control border-0 shadow-none">
+            </div>
+
+        </div>
+
+
+        <div class="row g-0 flex flex-row">
+            <div class="col-12 col-md-3 p-2">
+                <label for="Duration" class="fw-bold ml-1">How long:</label>
+                <input type="text" id="Duration" placeholder="Duration" class="form-control border-0 shadow-none">
+            </div>
+
+            <div class="col-12 col-md-3 p-2">
+                <label for="ssNo" class="fw-bold ml-1">Social Security No:</label>
+                <input type="text" id="ssNo" placeholder="social security number"
+                    class="form-control border-0 shadow-none">
+            </div>
+            <div class="col-12 col-md-3 p-2">
+                <label for="empPhone" class="fw-bold ml-1">Phone Number:</label>
+                <input type="text" id="empPhone" placeholder="phone number" class="form-control border-0 shadow-none">
+            </div>
+        </div>
+
+
+
+
+        <!-- Position Applied For -->
+        <div class="row g-0 m-0">
+
+            <div class="row g-0 flex flex-row">
+                <div class="col-12 col-md-3 p-2">
+                    <label for="empAge" class="fw-bold ml-1 underline">If under 18, list age:</label>
+                    <input type="text" id="empAge" placeholder="age" class="form-control border-0 shadow-none">
+                </div>
+                <div class="col-15 col-md-3 p-2">
+                    <label for="empPosition" class="fw-bold ml-1 underline">Position Applied For: </label>
+                    <input type="text" id="empPosition" placeholder="position name"
+                        class="form-control border-0 shadow-none">
+                </div>
+                <div class="col-12 col-md-3 p-2">
+                    <label for="empSalary" class="fw-bold ml-1 underline">Salary Desired:</label>
+                    <input type="text" id="empSalary" placeholder="salary amount"
+                        class="form-control border-0 shadow-none">
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-5 p-3">
+                <label class="fw-bold block mb-2 underline">
+                    Days Available To Work
+                </label>
+
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">No Preference</label>
+                    </div>
+                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Monday</label></div>
+                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Tuesday</label></div>
+                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Wednesday</label>
+                    </div>
+                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Thursday</label></div>
+                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Friday</label></div>
+                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Saturday</label></div>
+                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Sunday</label></div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Employment Desired -->
+        <div class="p-4">
+            <label class="fw-bold block m-auto mb-1 underline">
+                Employment Desired:
+            </label>
+
+            <div class="flex flex-col md:flex-row gap-2 md:gap-8">
+                <label>
+                    <input type="radio">
+                    FULL-TIME ONLY
+                </label>
+
+                <label>
+                    <input type="radio">
+                    PART-TIME ONLY
+                </label>
+
+                <label>
+                    <input type="radio">
+                    FULL OR PART-TIME
+                </label>
+            </div>
+        </div>
+
+
+        <div class="row g-0 flex flex-row mt-2">
+            <div class="col-12 col-md-3 p-2">
+                <label for="work-hours" class="fw-bold ml-1">How many hours can you work weekly?</label>
+                <input type="text" id="work-hours" placeholder="" class="form-control border-0 shadow-none">
+            </div>
+
+            <div class="col-12 col-md-3 p-2">
+                <label for="workN" class="fw-bold ml-1">Can you work nights?</label>
+                <input type="text" id="workN" placeholder="" class="form-control border-0 shadow-none">
+            </div>
+            <div class="col-12 col-md-3 p-2">
+                <label for="avTime" class="fw-bold ml-1">When available for work?</label>
+                <input type="text" id="avTime" placeholder="" class="form-control border-0 shadow-none">
+            </div>
+        </div>
+
+
+        <!-- Education Header -->
+        <div class="bg-black text-white font-bold my-3 text-center">
+            EDUCATION & OTHER INFORMATION
+        </div>
+
+        <!-- Responsive Table -->
+        <div class="table-responsive bg-black">
+            <table class="table table-bordered my-3 text-center border border-black">
+                <thead class="bg-black border border-white">
+                    <tr class="bg-gray-900 border border-black">
+                        <th class="">Type of School</th>
+                        <th>Name of School</th>
+                        <th>Location</th>
+                        <th>No. of Years Completed</th>
+                        <th>Major & Degree</th>
+                    </tr>
+                </thead>
+                <tbody class="">
+                    <tr>
+                        <td>High School</td>
+                        <td><input type="text" placeholder="Enter" id="hs1"></td>
+                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter"></td>
+                    </tr>
+
+                    <tr>
+                        <td>College</td>
+                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Bus. or Trade School</td>
+                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Professional School</td>
+                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="text-center my-4">
+        <button id="submitBtn" class="btn btn-secondary px-5">
+            Add
+        </button>
+    </div>
+    <div class="container mt-5 text-black">
+        <h3 class="mb-3">Employee Records</h3>
+
+        <div id="employeeList" class="row g-3">
+            <!-- Records will appear here -->
+        </div>
+    </div>
+    <script>
+
+        let employees = [];
+        let editIndex = -1;
+
+        const employeeList = document.getElementById("employeeList");
+
+        document.getElementById("submitBtn").addEventListener("click", () => {
+
+            const employee = {
+                name: document.getElementById("empName").value,
+                phone: document.getElementById("empPhone").value,
+                position: document.getElementById("empPosition").value,
+                salary: document.getElementById("empSalary").value
+            };
+
+            if (editIndex === -1) {
+                employees.push(employee);
+            }
+            else {
+                employees[editIndex] = employee;
+                editIndex = -1;
+            }
+
+            renderEmployees();
+            clearForm();
+        });
+
+        function renderEmployees() {
+
+            employeeList.innerHTML = "";
+
+            employees.forEach((emp, index) => {
+
+                employeeList.innerHTML += `
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+
+                        <h5>${emp.name}</h5>
+
+                        <p>
+                            <strong>Phone:</strong> ${emp.phone}<br>
+                            <strong>Position:</strong> ${emp.position}<br>
+                            <strong>Salary:</strong> ${emp.salary}
+                        </p>
+
+                        <button
+                            class="btn btn-warning me-2"
+                            onclick="updateEmployee(${index})">
+                            Update
+                        </button>
+
+                        <button
+                            class="btn btn-danger"
+                            onclick="deleteEmployee(${index})">
+                            Delete
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        `;
+            });
+        }
+
+        function updateEmployee(index) {
+
+            const emp = employees[index];
+
+            document.getElementById("empName").value = emp.name;
+            document.getElementById("empPhone").value = emp.phone;
+            document.getElementById("empPosition").value = emp.position;
+            document.getElementById("empSalary").value = emp.salary;
+
+            editIndex = index;
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        function deleteEmployee(index) {
+
+            if (confirm("Delete this employee?")) {
+
+                employees.splice(index, 1);
+
+                renderEmployees();
+
+                if (editIndex === index) {
+                    clearForm();
+                    editIndex = -1;
+                }
+            }
+        }
+
+        function clearForm() {
+
+            document.getElementById("empName").value = "";
+            document.getElementById("empPhone").value = "";
+            document.getElementById("empPosition").value = "";
+            document.getElementById("empSalary").value = "";
+            document.getElementById("hs1").value = "";
+        }
+
+    </script>
+</body>
+
+</html>
