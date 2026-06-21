@@ -13,7 +13,7 @@
 </head>
 
 
-<body class="py-8 rounded-3xl text-white bg-emerald-500">
+<body class="py-8 rounded-3xl text-white">
 
     <div class="container max-w-6xl bg-black  mx-auto p-0 shadow-lg rounded">
 
@@ -37,52 +37,82 @@
         <div class="row g-0">
             <div class="col-5 p-2">
                 <label class="fw-bold mb-1">Date:</label>
-                <input type="date" class="form-control border-0 shadow-none">
+                <p id="date" class="text-white"></p>
+                <!-- <input type="date" id="date" class="form-control border-0 shadow-none"> -->
             </div>
         </div>
 
         <!-- Name -->
         <div class="row g-0">
-            <label class="fw-bold ml-2">Name:</label>
+            <label class="fw-bold ml-2">Name<span style="color:red;">*</span></label>
+
+
             <div class="col-12 col-md-3 p-2">
-                <input type="text" id="empName" placeholder="Last" class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="last" id="empNameL" aria-label="Username"
+                        aria-describedby="visible-addon">
+                </div>
             </div>
 
             <div class="col-12 col-md-3 p-2">
-                <input type="text" placeholder="First" class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="first" id="empNameF" aria-label="Username"
+                        aria-describedby="visible-addon">
+                </div>
             </div>
 
             <div class="col-12 col-md-3 p-2">
-                <input type="text" placeholder="Middle" class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Middle(Optional)" id="empNameMd"
+                        aria-label="Username" aria-describedby="visible-addon">
+                </div>
             </div>
 
             <div class="col-12 col-md-3 p-2">
-                <input type="text" placeholder="Maiden" class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Maiden(Optional)" id="empNameMa"
+                        aria-label="Username" aria-describedby="visible-addon">
+                </div>
             </div>
         </div>
 
         <!-- Present Address -->
         <div class="row g-0">
-            <label class="fw-bold ml-2">Present Address:</label>
+            <label class="fw-bold ml-2">Present Address<span style="color:red;">*</span></label>
 
             <div class="col-6 col-md-2 p-2">
-                <input type="text" placeholder="Number" class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="number" id="num" aria-label="Username"
+                        aria-describedby="visible-addon">
+                </div>
             </div>
 
             <div class="col-6 col-md-3 p-2">
-                <input type="text" placeholder="Street" class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="street" id="street" aria-label="Username"
+                        aria-describedby="visible-addon">
+                </div>
             </div>
 
             <div class="col-6 col-md-3 p-2">
-                <input type="text" placeholder="City" class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="city" id="city" aria-label="Username"
+                        aria-describedby="visible-addon">
+                </div>
             </div>
 
             <div class="col-3 col-md-2 p-2">
-                <input type="text" placeholder="State" class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="state" id="state" aria-label="Username"
+                        aria-describedby="visible-addon">
+                </div>
             </div>
 
             <div class="col-3 col-md-2 p-2">
-                <input type="text" placeholder="Zip" class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="zip" id="zip" aria-label="Username"
+                        aria-describedby="visible-addon">
+                </div>
             </div>
 
         </div>
@@ -90,18 +120,26 @@
 
         <div class="row g-0 flex flex-row">
             <div class="col-12 col-md-3 p-2">
-                <label for="Duration" class="fw-bold ml-1">How long:</label>
-                <input type="text" id="Duration" placeholder="Duration" class="form-control border-0 shadow-none">
+                <label for="Duration" class="fw-bold ml-1">How long<span style="color:red;">*</span></label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="duration" id="Duration" aria-label="Username"
+                        aria-describedby="visible-addon">
+                </div>
             </div>
 
             <div class="col-12 col-md-3 p-2">
                 <label for="ssNo" class="fw-bold ml-1">Social Security No:</label>
-                <input type="text" id="ssNo" placeholder="social security number"
-                    class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="social security number" id="ssNo"
+                        aria-label="Username" aria-describedby="visible-addon">
+                </div>
             </div>
             <div class="col-12 col-md-3 p-2">
-                <label for="empPhone" class="fw-bold ml-1">Phone Number:</label>
-                <input type="text" id="empPhone" placeholder="phone number" class="form-control border-0 shadow-none">
+                <label for="empPhone" class="fw-bold ml-1">Phone Number<span style="color:red;">*</span></label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="phone number" id="empPhone"
+                        aria-label="Username" aria-describedby="visible-addon">
+                </div>
             </div>
         </div>
 
@@ -110,21 +148,28 @@
 
         <!-- Position Applied For -->
         <div class="row g-0 m-0">
-
             <div class="row g-0 flex flex-row">
                 <div class="col-12 col-md-3 p-2">
-                    <label for="empAge" class="fw-bold ml-1 underline">If under 18, list age:</label>
-                    <input type="text" id="empAge" placeholder="age" class="form-control border-0 shadow-none">
+                    <label for="empAge" class="fw-bold ml-1">If under 18, please list age:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="age" id="empAge" aria-label="Username"
+                            aria-describedby="visible-addon">
+                    </div>
                 </div>
                 <div class="col-15 col-md-3 p-2">
-                    <label for="empPosition" class="fw-bold ml-1 underline">Position Applied For: </label>
-                    <input type="text" id="empPosition" placeholder="position name"
-                        class="form-control border-0 shadow-none">
+                    <label for="empPosition" class="fw-bold ml-1">Position Applied For<span
+                            style="color:red;">*</span></label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="position" id="empPosition"
+                            aria-label="Username" aria-describedby="visible-addon">
+                    </div>
                 </div>
                 <div class="col-12 col-md-3 p-2">
-                    <label for="empSalary" class="fw-bold ml-1 underline">Salary Desired:</label>
-                    <input type="text" id="empSalary" placeholder="salary amount"
-                        class="form-control border-0 shadow-none">
+                    <label for="empSalary" class="fw-bold ml-1">Salary Desired<span style="color:red;">*</span></label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="salary amount" id="empSalary"
+                            aria-label="Username" aria-describedby="visible-addon">
+                    </div>
                 </div>
             </div>
 
@@ -134,18 +179,24 @@
                 </label>
 
                 <div class="grid grid-cols-2 gap-2 text-sm">
-                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">No Preference</label>
+                    <div class="flex flex-row gap-1"><input type="checkbox" id="NoPref"></input><label for="">No
+                            Preference</label>
                     </div>
-                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Monday</label></div>
-                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Tuesday</label></div>
-                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Wednesday</label>
+                    <div class="flex flex-row gap-1"><input type="checkbox" id="mon"></input><label
+                            for="">Monday</label></div>
+                    <div class="flex flex-row gap-1"><input type="checkbox" id="tues"></input><label
+                            for="">Tuesday</label></div>
+                    <div class="flex flex-row gap-1"><input type="checkbox" id="wed"></input><label
+                            for="">Wednesday</label>
                     </div>
-                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Thursday</label></div>
-                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Friday</label></div>
-                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Saturday</label></div>
-                    <div class="flex flex-row gap-1"><input type="checkbox"></input><label for="">Sunday</label></div>
-
-
+                    <div class="flex flex-row gap-1"><input type="checkbox" id="thurs"></input><label
+                            for="">Thursday</label></div>
+                    <div class="flex flex-row gap-1"><input type="checkbox" id="fri"></input><label
+                            for="">Friday</label></div>
+                    <div class="flex flex-row gap-1"><input type="checkbox" id="sat"></input><label
+                            for="">Saturday</label></div>
+                    <div class="flex flex-row gap-1"><input type="checkbox" id="sun"></input><label
+                            for="">Sunday</label></div>
                 </div>
             </div>
         </div>
@@ -156,22 +207,19 @@
         <!-- Employment Desired -->
         <div class="p-4">
             <label class="fw-bold block m-auto mb-1 underline">
-                Employment Desired:
+                Employment Desired<span style="color:red;">*</span>
             </label>
-
             <div class="flex flex-col md:flex-row gap-2 md:gap-8">
                 <label>
-                    <input type="radio">
+                    <input type="radio" id="etype">
                     FULL-TIME ONLY
                 </label>
-
                 <label>
-                    <input type="radio">
+                    <input type="radio" id="etype">
                     PART-TIME ONLY
                 </label>
-
                 <label>
-                    <input type="radio">
+                    <input type="radio" id="etype">
                     FULL OR PART-TIME
                 </label>
             </div>
@@ -181,22 +229,31 @@
         <div class="row g-0 flex flex-row mt-2">
             <div class="col-12 col-md-3 p-2">
                 <label for="work-hours" class="fw-bold ml-1">How many hours can you work weekly?</label>
-                <input type="text" id="work-hours" placeholder="" class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="working hours" id="work-hours"
+                        aria-label="Username" aria-describedby="visible-addon">
+                </div>
             </div>
 
             <div class="col-12 col-md-3 p-2">
                 <label for="workN" class="fw-bold ml-1">Can you work nights?</label>
-                <input type="text" id="workN" placeholder="" class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="" id="workN" aria-label="Username"
+                        aria-describedby="visible-addon">
+                </div>
             </div>
             <div class="col-12 col-md-3 p-2">
                 <label for="avTime" class="fw-bold ml-1">When available for work?</label>
-                <input type="text" id="avTime" placeholder="" class="form-control border-0 shadow-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="" id="avTime" aria-label="Username"
+                        aria-describedby="visible-addon">
+                </div>
             </div>
         </div>
 
 
         <!-- Education Header -->
-        <div class="bg-black text-white font-bold my-3 text-center">
+        <div class="bg-black text-white font-bold my-3 text-center underline">
             EDUCATION & OTHER INFORMATION
         </div>
 
@@ -212,37 +269,34 @@
                         <th>Major & Degree</th>
                     </tr>
                 </thead>
-                <tbody class="">
+                <tbody>
                     <tr>
                         <td>High School</td>
                         <td><input type="text" placeholder="Enter" id="hs1"></td>
-                        <td><input type="text" placeholder="Enter"></td>
-                        <td><input type="text" placeholder="Enter"></td>
-                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter" id="hs2"></td>
+                        <td><input type="text" placeholder="Enter" id="hs3"></td>
+                        <td><input type="text" placeholder="Enter" id="hs4"></td>
                     </tr>
-
                     <tr>
                         <td>College</td>
-                        <td><input type="text" placeholder="Enter"></td>
-                        <td><input type="text" placeholder="Enter"></td>
-                        <td><input type="text" placeholder="Enter"></td>
-                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter" id="c1"></td>
+                        <td><input type="text" placeholder="Enter" id="c2"></td>
+                        <td><input type="text" placeholder="Enter" id="c3"></td>
+                        <td><input type="text" placeholder="Enter" id="c4"></td>
                     </tr>
-
                     <tr>
                         <td>Bus. or Trade School</td>
-                        <td><input type="text" placeholder="Enter"></td>
-                        <td><input type="text" placeholder="Enter"></td>
-                        <td><input type="text" placeholder="Enter"></td>
-                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter" id="b1"></td>
+                        <td><input type="text" placeholder="Enter" id="b2"></td>
+                        <td><input type="text" placeholder="Enter" id="b3"></td>
+                        <td><input type="text" placeholder="Enter" id="b4"></td>
                     </tr>
-
                     <tr>
                         <td>Professional School</td>
-                        <td><input type="text" placeholder="Enter"></td>
-                        <td><input type="text" placeholder="Enter"></td>
-                        <td><input type="text" placeholder="Enter"></td>
-                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="text" placeholder="Enter" id="p1"></td>
+                        <td><input type="text" placeholder="Enter" id="p2"></td>
+                        <td><input type="text" placeholder="Enter" id="p3"></td>
+                        <td><input type="text" placeholder="Enter" id="p4"></td>
                     </tr>
                 </tbody>
             </table>
@@ -250,18 +304,52 @@
     </div>
 
     <div class="text-center my-4">
-        <button id="submitBtn" class="btn btn-secondary px-5">
-            Add
+        <button type="button" class="btn btn-dark btn-md px-4 py-2" id="submitBtn" onclick="validateForm()">
+            Submit
         </button>
     </div>
     <div class="container mt-5 text-black">
-        <h3 class="mb-3">Employee Records</h3>
+        <h3 class="mb-3">Records</h3>
 
         <div id="employeeList" class="row g-3">
             <!-- Records will appear here -->
         </div>
     </div>
     <script>
+        //date fixed
+        document.getElementById("date").innerHTML = new Date().toISOString().split('T')[0];
+        // mandatory fields
+        function validateForm() {
+            const firstname = document.getElementById("empNameF").value.trim();
+            const lastname = document.getElementById("empNameL").value.trim();
+            const phoneno = document.getElementById("empPhone").value.trim();
+            const pos = document.getElementById("empPosition").value.trim();
+            const sal = document.getElementById("empSalary").value.trim();
+
+            if (firstname === "") {
+                alert("First Name is required!");
+                document.getElementById("empNameF").focus();
+                return false;
+            }
+
+            if (lastname === "") {
+                alert("Last Name is required!");
+                document.getElementById("empNameL").focus();
+                return;
+            }
+            if (!/^\d{10}$/.test(phoneno)) {
+                alert("Please enter a valid 10-digit phone number!");
+                document.getElementById("empPhone").focus();
+                return false;
+            }
+            if (phoneno === "" || pos === "" || sal === "") {
+                alert("please fill all the mandatory fields!")
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+        }
+
 
         let employees = [];
         let editIndex = -1;
@@ -270,8 +358,13 @@
 
         document.getElementById("submitBtn").addEventListener("click", () => {
 
+            if (!validateForm()) {
+                return;
+            }
+
             const employee = {
-                name: document.getElementById("empName").value,
+                Lname: document.getElementById("empNameL").value,
+                Fname: document.getElementById("empNameF").value,
                 phone: document.getElementById("empPhone").value,
                 position: document.getElementById("empPosition").value,
                 salary: document.getElementById("empSalary").value
@@ -300,7 +393,7 @@
                 <div class="card shadow-sm">
                     <div class="card-body">
 
-                        <h5>${emp.name}</h5>
+                        <h5>${emp.Fname + " " + emp.Lname}</h5>
 
                         <p>
                             <strong>Phone:</strong> ${emp.phone}<br>
@@ -331,7 +424,8 @@
 
             const emp = employees[index];
 
-            document.getElementById("empName").value = emp.name;
+            document.getElementById("empNameL").value = emp.Lname;
+            document.getElementById("empNameF").value = emp.Fname;
             document.getElementById("empPhone").value = emp.phone;
             document.getElementById("empPosition").value = emp.position;
             document.getElementById("empSalary").value = emp.salary;
@@ -360,14 +454,23 @@
         }
 
         function clearForm() {
+            const arr = ["empNameL", "empNameF", "empNameMd", "empNameMa", "num", "city", "street", "state", "zip",
+                "Duration", "ssNo", "empPhone", "empAge", "empPosition", "empSalary", "NoPref", "mon", "tues", "wed", "thurs", "fri",
+                "sat", "sun", "etype", "work-hours", "workN", "avTime", "hs1", "hs2", "hs3", "hs4", "p1", "p2", "p3", "p4", "c1", "c2", "c3", "c4", "b1", "b2", "b3", "b4"
+            ];
 
-            document.getElementById("empName").value = "";
-            document.getElementById("empPhone").value = "";
-            document.getElementById("empPosition").value = "";
-            document.getElementById("empSalary").value = "";
-            document.getElementById("hs1").value = "";
+            arr.forEach(id => {
+                const element = document.getElementById(id);
+
+                if (!element) return;
+
+                if (element.type === "checkbox" || element.type === "radio") {
+                    element.checked = false;
+                } else {
+                    element.value = "";
+                }
+            });
         }
-
     </script>
 </body>
 
